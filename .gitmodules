@@ -1,0 +1,6 @@
+[submodule "vendor/plugins/saasramp"]
+	path = vendor/plugins/saasramp
+	url = git@github.com:Vilango/saasramp.git
+[submodule "vendor/plugins/active_merchant"]
+	path = vendor/plugins/active_merchant
+	url = git@github.com:Vilango/active_merchant.git
