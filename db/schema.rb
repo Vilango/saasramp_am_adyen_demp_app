@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100914124709) do
+ActiveRecord::Schema.define(:version => 20100914143040) do
 
   create_table "subscription_plans", :force => true do |t|
     t.string   "name",                      :null => false
@@ -61,5 +61,11 @@ ActiveRecord::Schema.define(:version => 20100914124709) do
   add_index "subscriptions", ["state"], :name => "index_subscriptions_on_state"
   add_index "subscriptions", ["subscriber_id"], :name => "index_subscriptions_on_subscriber_id"
   add_index "subscriptions", ["subscriber_type"], :name => "index_subscriptions_on_subscriber_type"
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

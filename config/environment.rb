@@ -19,10 +19,10 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem 'lockfile', :version => "1.4.3" 
   config.gem "activemerchant", :version => '1.7.2v' unless File.directory?(File.join(Rails.root, 'vendor/plugins/active_merchant'))
   config.gem 'money', :version => '3.0.5' 
   config.gem 'state_machine', :version => "0.9.4"
+  config.gem 'lockfile', :version => "1.4.3" 
   
   config.active_record.observers = :subscription_observer
 

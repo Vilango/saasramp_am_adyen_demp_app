@@ -8,6 +8,9 @@ defaults: &defaults
   # trial period length (days) before first billing (can be 0 for no trial) (default = 30)
   trial_period: 30
   
+  # currency in which the subscriptions are billed
+  currency: EUR
+  
   # grace period length (days) after subscription is past due before it is expired (closed down)
   grace_period: 7
   
